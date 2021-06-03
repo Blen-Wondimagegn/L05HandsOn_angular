@@ -1,0 +1,15 @@
+<form (ngSubmit)="formSubmit()">
+    
+        <label for="name">City: </label>
+        <input type="text" placeholder="Enter a city" name="city" required [(ngModel)]="model.city">
+         <br>
+        <label for="country">Country: </label>
+        <input type="text" placeholder="Enter a country" name="country"  required [(ngModel)]="model.country">
+         <br>
+        <label for="description">Description: </label>
+       <textarea placeholder="Enter a description" name="description" required [(ngModel)]="model.description" ></textarea>
+       <br>
+
+        <button type="submit">Submit</button>
+
+</form>
